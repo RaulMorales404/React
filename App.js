@@ -23,7 +23,7 @@ const App = () => {
           headerShown: false
         }}
       >
-        <Stack.Screen name='Login' component={LoginView}/>
+     
         <Stack.Screen name='Register' component={RegisterView}/>
         <Stack.Screen name='MyFlights' component={MyFlightsView}/>
         <Stack.Screen name='Booking' component={BookingView}/>
