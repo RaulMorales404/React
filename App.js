@@ -1,4 +1,6 @@
 /**
+
+ * RaulMorales404
  * Sample React Native App
  * https://github.com/facebook/react-native
  *
@@ -16,7 +18,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import MyFlightsView from './src/screens/MyFlightsView/MyFlightsView';
 import BookingView from './src/screens/BookingView/BookingView';
 
-const Stack = ());
+const
 
 const App = () => {
   return (
