@@ -1,25 +1,25 @@
 .container-top{
-    background-color: #282c34;
+    background-color:#F2F3F4;
     min-height: 100vh;
     display: flex;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: #979A9A;
     justify-content:center;
     align-items:flex-start;
 }
 
-.containerSearch{
-  
-    background-color: #282c34;
+.container-bottom{
+    background-color: #F2F3F4;
     min-height: 100vh;
     display: flex;
     font-size: calc(10px + 2vmin);
-    color: white;
+    color: #979A9A;
     justify-content:center;
     align-items:center;
-
-   
 }
+
+
+
 
 
 
