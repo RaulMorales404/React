@@ -1,10 +1,11 @@
 
-import './App.css';
+
+import Search from './views/Search';
 
 function App() {
   return (
-    <div className="App-header">
-      
+    <div >
+      <Search></Search>
     </div>
   );
 }

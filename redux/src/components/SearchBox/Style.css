@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  text-align: center;
+}
+.input {
+  border-radius: 30px;
+  width: 350px;
+  margin: 5px;
+  height: 30px;
+  border: 1px solid #282c34;
+}
+.button {
+  margin-left: 5px;
+  border-radius: 15px;
+  background: #00aebb;
+  width: 90px;
+  border: 1px solid #00aebb;
+  height: 33px;
+  color: aliceblue;
+  font-weight: bold;
+}
+.button-close {
+  padding: 0 5px;
+  border-radius: 15px;
+  margin-left: 5px;
+  background: #282c34;
+  width: 90px;
+  border: 1px solid #a93226;
+  height: 33px;
+  color: #a93226;
+  font-weight: bold;
+}
+
+.row {
+  margin-top: 20px;
+}
+.row-none {
+  margin-top: 0px;
+}
