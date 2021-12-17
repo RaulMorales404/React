@@ -15,9 +15,14 @@ export const Search = () => {
     });
     setResults(dataResult);
   };
+ 
 
   const [isSearching, setIsSearching] = useState(false);
-  const inputTop = (boolean) => setIsSearching(boolean);
+  const inputTop = (boolean) => {
+    if(boolean===false){
+      setShowNotFount("");
+    }
+    setIsSearching(boolean)};
   return (
     <div className={isSearching ? "container-top" : "container-bottom"}>
       <div className="row">

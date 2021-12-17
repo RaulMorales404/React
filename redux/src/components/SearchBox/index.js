@@ -26,11 +26,11 @@ export const SearchBox = ({ onInputTop, onClearResult, onHandleSearch, isSearchT
           onChange={({ target: { value } }) => setSearchText(value)}
         />
         <CustomButtons className="button" action={searchPeople} text="Search" />
-        <CustomButtons
+        {isSearchTop &&  <CustomButtons
           className="button-close"
           action={searchClose}
-          text={isSearchTop ? "Cloce" : "Clear"}
-        />
+          text="Cloce"
+        />}
       </div>
     </div>
   );
