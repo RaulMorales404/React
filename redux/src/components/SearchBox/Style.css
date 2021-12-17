@@ -3,20 +3,20 @@
   flex-direction: column;
 }
 .title {
+  color: #717D7E;
   margin-left: 50px;
 }
 .input {
-  background: #979A9A;
+  background: #D7DBDD ;
   width: 350px;
   margin: 5px;
   height: 30px;
   font-weight: 500;
-  color: #fff;
+  color: #717D7E;
   padding-left: 20px;
-  border: 1px solid #979A9A;
+  border: 1px solid #D7DBDD ;
 }
 .input:focus{
- 
   box-shadow: 0px 0px 3px 0px #B9D0D5 inset;
   outline: none;
 }
@@ -33,23 +33,22 @@
   background: #41BAD5;
   border: 1px solid #41BAD5;
 }
-
 .button-close:hover{
   background: #A1AAAC;
   border: 1px solid #A1AAAC;
+  color: #fff;
+  transition: 0.5s all;
 }
-
 .button-close {
   padding: 0 5px;
   margin-left: 5px;
-  background: #979A9A;
+  background: #D7DBDD ;
   width: 90px;
-  border: 1px solid #979A9A;
+  border: 1px solid #D7DBDD ;
   height: 33px;
-  color: aliceblue;
+  color: #717D7E;
   font-weight: bold;
 }
-
 .row {
   margin-top: 20px;
 }

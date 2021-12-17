@@ -1,26 +1,36 @@
 import { useState } from "react";
 import "./Style.css";
 import CustomButtons from "./CustomButtons";
-export const SearchBox = ({ action, stateSearch }) => {
+export const SearchBox = ({ onInputTop, onClearResult, onHandleSearch, isSearchTop }) => {
   const [searchText, setSearchText] = useState("");
   const searchPeople = () => {
-    action(true);
+    if (searchText !== "" && !/^\s+$/.test(searchText)) {
+      onInputTop(true);
+      onHandleSearch(searchText.toLowerCase());
+    }else{
+      alert("Pype a name");
+    }
   };
   const searchClose = () => {
     setSearchText("");
-    action(false);
+    onClearResult([]);
+    onInputTop(false);
   };
   return (
     <div className="container">
-      {!stateSearch && <h2 className="title"> Search People </h2>}
-      <div className={stateSearch ? "row" : "row-none"}>
+      {!isSearchTop && <h2 className="title"> Search People </h2>}
+      <div className={isSearchTop ? "row" : "row-none"}>
         <input
           className="input"
           value={searchText}
-          onChange={({ target: { value } }) =>setSearchText(value)}
+          onChange={({ target: { value } }) => setSearchText(value)}
         />
         <CustomButtons className="button" action={searchPeople} text="Search" />
-        <CustomButtons className="button-close" action={searchClose} text="Cloce" />
+        <CustomButtons
+          className="button-close"
+          action={searchClose}
+          text={isSearchTop ? "Cloce" : "Clear"}
+        />
       </div>
     </div>
   );

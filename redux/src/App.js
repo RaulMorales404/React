@@ -1,11 +1,10 @@
 
-
-import Search from './views/Search';
+import Search from './views/Search/index.js';
 
 function App() {
   return (
-    <div >
-      <Search></Search>
+    <div>
+    <Search />
     </div>
   );
 }
